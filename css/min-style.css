@@ -90,20 +90,57 @@ body {
 
 #map-marker {
   /* icone barre recherche */
-  grid-column: 1/4;
+  grid-column: 1/2;
 }
 
 #recherche {
   /* barre rechercher */
-  grid-column: 4;
+  grid-column: 2;
 
 }
 
 .search-bar button {
   /* bouton rechercher */
-  grid-column: 5;
+  grid-column: 3;
 }
 
+.filtres {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-top: 2rem;
+}
+
+.filtres ul {
+  display:flex;
+  flex-direction: column;
+}
+
+#filtre-span {
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.filtres ul li span {
+  color: #0065fc;
+  padding: 6px;
+  margin-right: 0.5rem;
+  background-color: #deebff;
+  border-radius: 100%;
+}
+
+.filtres ul li span i {
+  height: 24px;
+  width: 24px;
+}
+
+.filtres ul li {
+  font-size:18px;
+  width:fit-content;
+  height:fit-content;
+}
 
 .main {
   display: flex;
