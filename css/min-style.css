@@ -90,7 +90,7 @@ body {
 
 #map-marker {
   /* icone barre recherche */
-  grid-column: 1/2;
+  grid-column: 1;
 }
 
 #recherche {
@@ -105,15 +105,14 @@ body {
 }
 
 .filtres {
-  display: flex;
-  flex-direction: row;
+  display:flex;
+  flex-direction: column;
   list-style: none;
   padding-top: 2rem;
 }
 
 .filtres ul {
-  display:flex;
-  flex-direction: column;
+  display:inline-block;
 }
 
 #filtre-span {
@@ -129,17 +128,22 @@ body {
   margin-right: 0.5rem;
   background-color: #deebff;
   border-radius: 100%;
+  text-align: center;
 }
 
 .filtres ul li span i {
-  height: 24px;
+  height: fit-content;
   width: 24px;
 }
 
 .filtres ul li {
-  font-size:18px;
+  display: inline-block;
+  text-align: left;
   width:fit-content;
   height:fit-content;
+  border-left-style: none;
+  margin: 1rem;
+  font-size: 14px;
 }
 
 .main {
@@ -211,16 +215,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto;
 }
 
 .right-activites {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto;
 }
 
 .activites .right article {
   width: 100%;
+  max-width: 356px;
   height: 225px;
   border-radius: 20px;
   background: white;
@@ -233,6 +240,7 @@ body {
 
 .activites .left article {
   width: 100%;
+  max-width: 356px;
   height: 225px;
   border-radius: 20px;
   background: white;
