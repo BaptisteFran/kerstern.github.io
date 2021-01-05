@@ -91,7 +91,7 @@ a.disabled {
   border: 1px solid #f2f2f2;
 }
 
-.search-bar button {
+#search-text-btn {
   /* bouton rechercher */
   color: white;
   background-color: #0065fc;
@@ -100,6 +100,10 @@ a.disabled {
   grid-column: 3;
   font-weight: bold;
   padding-right: 10px;
+}
+
+#search-btn {
+  display: none;
 }
 
 .filtres {
