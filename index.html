@@ -10,10 +10,15 @@
       media="screen and (max-width: 900px)"
       href="css/min-style.css"
     />
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/tablet-style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap"
       rel="stylesheet"
     />
     <!-- Fontawesome -->
@@ -33,7 +38,7 @@
           <div class="menu-links">
             <ul>
               <li>
-                <a href="#main" class="active" id="heberg">Hébergements</a>
+                <a href="#left-main" class="active" id="heberg">Hébergements</a>
               </li>
               <li>
                 <a href="#activites" class="disabled" id="activities"
@@ -63,7 +68,9 @@
             />
             <button type="button" id="search-text-btn">Rechercher</button>
             <!-- Bouton alternatif -->
-            <button type="button" id="search-btn"><i class="fas fa-search" ></i></button>
+            <button type="button" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
           </div>
           <div class="filtres">
             <span id="filtre-span"><strong>Filtres</strong></span>
@@ -91,8 +98,8 @@
         </div>
 
         <!-- Menu princical-->
-        <aside class="main">
-          <section class="left-main">
+        <section class="main" id="main">
+          <aside class="left-main" id="left-main">
             <h2>Hébergements à Marseille</h2>
             <article id="cannebiere">
               <img
@@ -185,10 +192,10 @@
               </span>
             </article>
             <a href="#left-main">Afficher plus</a>
-          </section>
-          <section class="right-main">
+          </aside>
+          <aside class="right-main">
             <div>
-              <p>Les plus populaires</p>
+              <h2>Les plus populaires</h2>
               <span><i class="fas fa-chart-line"></i></span>
             </div>
 
@@ -237,8 +244,8 @@
                 <i class="fas fa-star grey"></i>
               </span>
             </article>
-          </section>
-        </aside>
+          </aside>
+        </section>
 
         <!-- Activités -->
         <section class="activites">

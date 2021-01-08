@@ -4,8 +4,14 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
 .container {
   padding: 2rem;
+  max-width: 1800px;
+  margin: auto;
 }
 
 .navbar {
@@ -39,8 +45,8 @@ body {
 
 .active {
   /* lien actif (bordure bleue) */
-  border-top: 2px solid #0065fc;
-  padding: 2.85rem 1rem 0 1rem;
+  border-top: 5px solid #0065fc;
+  padding: 5.9rem 1rem 0 1rem;
 }
 
 a.disabled {
@@ -66,7 +72,7 @@ a.disabled {
   grid-row: 2;
   display: inline-grid;
   grid-template-columns: 10% 60% 30%;
-  grid-template-rows: 34px;
+  grid-template-rows: 40px;
   max-width: 500px;
   border-radius: 10px;
 }
@@ -83,7 +89,9 @@ a.disabled {
 
 #recherche {
   /* barre rechercher */
+  font-family: "Raleway";
   text-align: left;
+  padding: 0;
   padding-left: 10px;
   border: none;
   grid-column: 2;
@@ -206,6 +214,7 @@ a.disabled {
   background: white;
   padding: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  transition: transform .5s ease;
 }
 
 .left-main article img {
@@ -213,6 +222,11 @@ a.disabled {
   height: 195px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
+  
+}
+
+.left-main article:hover {
+  transform: scale(1.1);
 }
 
 .left-main article h4,
@@ -262,10 +276,9 @@ article span {
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 2rem;
-  text-align: center;
 }
 
-.right-main p {
+.right-main h2 {
   float: left;
   grid-row: 1;
   font-weight: bold;
@@ -278,19 +291,25 @@ article span {
 }
 
 .right-main article {
-  width: 350px;
+  width: auto;
   height: auto;
   margin: auto;
   max-height: 175px;
   border-radius: 20px;
   background: white;
   padding: 5px;
-  text-align: center;
+  text-align: start;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 33%);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  column-gap: 1rem;
   margin-top: 5rem;
+  transition: transform .5s ease;
+}
+
+.right-main article:hover {
+  transform: scale(1.1);
 }
 
 .right-main article img {
@@ -301,17 +320,26 @@ article span {
 }
 
 .right-main article h4 {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
   grid-column: 2;
   grid-row: 1;
 }
 
 .right-main article p {
+  margin: 0;
   font-weight: lighter;
+  margin-top: auto;
+  margin-bottom: auto;
   grid-column: 2;
   grid-row: 2;
 }
 
 .right-main article span {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
   grid-column: 2;
   grid-row: 3;
 }
