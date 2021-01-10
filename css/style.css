@@ -54,8 +54,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .active {
   /* lien actif (bordure bleue) */
-  border-top: 5px solid #0065fc;
-  padding: 5.9rem 1rem 0 1rem;
+  border-top: 2px solid #0065fc;
+  padding: 2.9rem 1rem 0 1rem;
 }
 
 a.disabled {
