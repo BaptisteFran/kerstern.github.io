@@ -8,6 +8,10 @@ body {
   color: black;
 }
 
+.w3c {
+  display: none;
+}
+
 .main a {
   text-decoration: none;
   color: black;
@@ -326,6 +330,7 @@ article span {
   height: 175px;
   border-radius: 20px 0 0 20px;
   object-fit: cover;
+  grid-row: 1/4;
 }
 
 .right-main article h4 {
@@ -434,11 +439,13 @@ article span {
   object-fit: cover;
 }
 
-.activites p {
+.activites h4 {
   grid-column: 1;
   grid-row: 2;
   padding: 5px;
   text-align: left;
+  margin: 0;
+  margin-top: 0.5rem;
 }
 
 #vieux-port img {
