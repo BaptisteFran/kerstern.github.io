@@ -204,7 +204,7 @@ p {
   margin: auto;
   margin-left: 0.5rem;
 }
-#fonctionnement #num {
+#fonctionnement .num {
   font-weight: bold;
   margin: auto;
   margin-right: 1rem;
@@ -217,7 +217,7 @@ p {
   color: white;
   font-size: 12px;
 }
-#fonctionnement #icone {
+#fonctionnement .icone {
   margin: auto;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
