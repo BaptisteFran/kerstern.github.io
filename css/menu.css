@@ -100,7 +100,7 @@ header img {
   border-bottom: 3px solid #99e2d0;
   width: 12%;
   padding-bottom: 0.3rem;
-  animation: fadeIn 0.5s linear;
+  animation: fadeIn 0.5s linear 0.5s;
 }
 #menu #entree ul,
 #menu #plat ul,
@@ -111,17 +111,17 @@ header img {
 #menu #entree ul li:nth-child(1),
 #menu #plat ul li:nth-child(1),
 #menu #dessert ul li:nth-child(1) {
-  animation-delay: 0.15s;
+  animation-delay: 0.65s;
 }
 #menu #entree ul li:nth-child(2),
 #menu #plat ul li:nth-child(2),
 #menu #dessert ul li:nth-child(2) {
-  animation-delay: 0.3s;
+  animation-delay: 0.8s;
 }
 #menu #entree ul li:nth-child(3),
 #menu #plat ul li:nth-child(3),
 #menu #dessert ul li:nth-child(3) {
-  animation-delay: 0.45s;
+  animation-delay: 0.95s;
 }
 #menu #entree ul li,
 #menu #plat ul li,
@@ -173,19 +173,19 @@ header img {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#menu #entree ul li article #prix,
-#menu #plat ul li article #prix,
-#menu #dessert ul li article #prix {
+#menu #entree ul li article .prix,
+#menu #plat ul li article .prix,
+#menu #dessert ul li article .prix {
   grid-row: 2;
   grid-column: 2;
   text-align: right;
   font-weight: bold;
   margin-right: 1rem;
-  transition: all 0.3s linear;
+  transition: 0.5s linear;
 }
-#menu #entree ul li #slider,
-#menu #plat ul li #slider,
-#menu #dessert ul li #slider {
+#menu #entree ul li .slider,
+#menu #plat ul li .slider,
+#menu #dessert ul li .slider {
   grid-column: 2;
   position: absolute;
   top: 0;
@@ -196,26 +196,26 @@ header img {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background: #99e2d0;
-  transition: all 0.3s linear;
+  transition: all 0.5s linear;
 }
-#menu #entree ul li #slider i,
-#menu #plat ul li #slider i,
-#menu #dessert ul li #slider i {
+#menu #entree ul li .slider i,
+#menu #plat ul li .slider i,
+#menu #dessert ul li .slider i {
   margin-top: 1rem;
   font-size: 2rem;
   color: white;
-  transition: all 0.3s linear;
+  transition: all 0.5s linear;
 }
-#menu #entree ul article:hover #prix,
-#menu #plat ul article:hover #prix,
-#menu #dessert ul article:hover #prix {
+#menu #entree ul article:hover .prix,
+#menu #plat ul article:hover .prix,
+#menu #dessert ul article:hover .prix {
   text-align: left;
   margin-left: 0;
-  animation: slide-left 0.3s forwards;
+  animation: slide-left 0.5s forwards;
 }
-#menu #entree ul article:hover #slider,
-#menu #plat ul article:hover #slider,
-#menu #dessert ul article:hover #slider {
+#menu #entree ul article:hover .slider,
+#menu #plat ul article:hover .slider,
+#menu #dessert ul article:hover .slider {
   grid-column: 2;
   top: 0;
   right: 0;
@@ -226,16 +226,16 @@ header img {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background: #99e2d0;
-  animation: slide-left 0.3s forwards;
+  animation: slide-left 0.5s forwards;
 }
-#menu #entree ul article:hover #slider i,
-#menu #plat ul article:hover #slider i,
-#menu #dessert ul article:hover #slider i {
+#menu #entree ul article:hover .slider i,
+#menu #plat ul article:hover .slider i,
+#menu #dessert ul article:hover .slider i {
   display: block;
   margin-top: 1rem;
   font-size: 2rem;
   color: white;
-  animation: rotate-center 0.3s linear;
+  animation: rotate-center 0.5s linear;
 }
 #menu #commander {
   background: linear-gradient(#ff79da, #9356dc);
