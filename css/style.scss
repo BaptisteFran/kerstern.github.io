@@ -27,7 +27,8 @@ p {
   width: 100%;
   height: 100%;
   background: white;
-  animation: hide 3s forwards;
+  animation: spinner 0s forwards;
+  animation-delay: 3.1s;
 }
 
 #loader {
@@ -190,6 +191,7 @@ p {
     }
 
     button:hover {
+      opacity: 0.9;
       box-shadow: 0px 0px 7px rgba($color: #000000, $alpha: 1);
     }
 
@@ -392,13 +394,6 @@ footer {
 
 /* ANIMATION */
 
-.btn-hover {
-  transition: 0.2s linear;
-}
-
-.btn-hover:hover {
-  opacity: 0.9;
-}
 
 @keyframes spin {
   0% {
@@ -410,14 +405,15 @@ footer {
   }
 }
 
-@keyframes hide {
+@keyframes spinner {
   0% {
     opacity: 1;
   }
-  90% {
-    opacity: 1;
-  }
+
   100% {
     opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
 }
