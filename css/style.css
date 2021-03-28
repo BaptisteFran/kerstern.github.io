@@ -4,9 +4,8 @@ body {
   font-family: "Carter One", cursive;
   background-image: linear-gradient(
     179deg,
-    #39007d 0%,
-    #bc329a 40%,
-    #ff6373 80%
+    #103783 0%,
+    #9bafd9 100%
   );
 }
 
@@ -32,6 +31,13 @@ h4 {
 .logo {
   grid-column: 1/2;
   grid-row: 1;
+  text-align: left;
+  margin-top: -1rem;
+}
+
+.logo img {
+  max-width: 30%;
+  max-height: auto;
 }
 
 .menu-links {
@@ -64,7 +70,7 @@ a.disabled {
 }
 
 .grey {
-  color: #dddddd;
+  color: #f2f2f2;
 }
 
 #img-head {
@@ -90,7 +96,7 @@ a.disabled {
 .left-feature {
   grid-column: 1;
   grid-row: 1;
-  background-color: rgba(242, 242, 242, 0.7);
+  background-color: rgba(242, 242, 242, 0.856);
   padding: 2rem;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -102,7 +108,7 @@ a.disabled {
 .right-feature {
   grid-column: 1;
   grid-row: 2;
-  background-color: rgba(242, 242, 242, 0.7);
+  background-color: rgba(242, 242, 242, 0.856);
   padding: 2rem;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -163,10 +169,9 @@ a.disabled {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0;
-  background-color: rgba(59, 4, 4, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   height: auto;
   width: 100%;
-  max-height: 15vh;
   text-align: left;
 }
 
@@ -175,7 +180,7 @@ a.disabled {
   grid-row: 1;
   text-align: center;
   font-size: 0.8rem;
-  color: #cacaca;
+  color: #f2f2f2;
 }
 
 .copyrights {
@@ -183,12 +188,12 @@ a.disabled {
   grid-column: 1/4;
   text-align: center;
   font-size: 0.7rem;
-  color: #cacaca;
+  color: #f2f2f2;
 }
 
 .footer ul {
   text-align: center;
-  color: #cacaca;
+  color: #f2f2f2;
 }
 
 .footer ul li a {
