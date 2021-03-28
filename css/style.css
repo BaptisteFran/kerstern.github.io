@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Carter One", cursive;
+  font-family: 'Roboto', sans-serif;
   background-image: linear-gradient(
     179deg,
     #103783 0%,
@@ -26,6 +26,7 @@ h4 {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
+  font-family: "Acme", sans-serif;
 }
 
 .logo {
