@@ -8,6 +8,14 @@ main {
   margin-top: 25rem;
 }
 
+#en-construction i {
+  color: yellow;
+}
+
+#en-construction {
+  font-size: 24px;
+}
+
 .progress-6 {
     margin: auto;
     width:120px;
