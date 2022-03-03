@@ -5,21 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Baptiste FRANEL - Développeur Web</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
       rel="stylesheet"
     />
+
   </head>
   <body>
     <header>
       <nav id="nav">
         <img src="img/logo.png" alt="Logo" />
         <ul id="nav-ul">
-          <li class="nav-link active-link">Accueil</li>
-          <li class="nav-link">Créations</li>
-          <li class="nav-link">Contact</li>
+          <li class="nav-link active-link">
+            <a href="#nav">Accueil</a>
+          </li>
+          <li class="nav-link">
+            <a href="#experiences">Expériences</a>
+          </li>
+          <li class="nav-link">
+            <a href="#diplomes">Diplômes</a>
+          </li>
+          <li class="nav-link">
+            <a href="#travaux">Travaux réalisés</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -43,6 +57,7 @@
       <section id="right">
         <h2 class="text-flicker-in-glow">Développeur Web</h2>
         <section id="presentation">
+          <img class="photo" src="img/1593627281193.jpg" alt="photo myself">
           <p>
             Développeur Web depuis maintenant 1 an, j'ai pu mettre en
             application mes connaissances grâce à plusieurs projets réalisés.
@@ -118,6 +133,89 @@
           </p>
         </section>
       </section>
+      
+      <div class="container">
+        <hr>
+        <div class="row" id="diplomes">
+          <div class="col-md-12 mt-5 mb-5">
+            <h2>Diplômes</h2>
+            <h5>Bac professionnel SEN option réseau et télécom</h5>
+            <p>Lycée Jean Moulin - Port-de-bouc - 2008</p>
+            <h5>Bac+2 TSTR (Technicien supérieur en réseau et sécurité)</h5>
+            <p>Institut PolyInformatique - Blagnac - 2018 - 2020</p>
+            <h5>Bac+2 Développeur Web</h5>
+            <p>Openclassrooms - 2021</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row" id="experiences">
+          <div class="col-md-12">
+            <h2>Expériences</h2>
+          </div>
+          <div class="col-md-6 mt-5 mb-5">
+            <h5>Openclassrooms - Groupomania</h5>
+            <br><br><br>
+            <h5>Openclassrooms</h5>
+            <br><br><br>
+            <h5>Kupopedia</h5>
+            <br><br><br>
+            <h5>Projet Camping</h5>
+            <br><br><br>
+          </div>
+          <div class="col-md-6 mt-5 mb-5">
+            
+            <p>Langages utilisés : HTML, CSS, Javascript, NodeJS, VueJS, MySQL
+              Dernier projet de la formation de développeur Web, création en full stack d’un réseau
+              social d’entreprise.</p>
+              <hr><br>
+              <p>Langages utilisés : HTML, CSS/SASS, Javascript, NodeJS, MongoDB
+                Plusieurs projets frontend et backend, création de site marchand, site vitrine pour
+                agence de voyage, API d’avis gastronomiques
+                </p>
+              <hr><br>
+              <p>Langages utilisés : Python Django, Html, CSS, Postgresql
+                Site web jeu vidéo, développement fullstack avec Django. Création et gestion de posts,
+                commentaires, stockés dans une base de données. Interface administrateur.</p>
+              <hr><br>
+              <p>Langage utilisé : PHP, MySQL, Html, CSS
+                Développement d’un site web en PHP sans framework, fullstack qui permet de gérer
+                l’arrivé et le départ d’enfants dans le club d’un camping.
+                </p>
+          </div>
+        </div>
+        <div class="row" id="travaux">
+          <hr>
+          <div class="col-md-12 mt-5 mb-5">
+            <h2 class="mb-5">Travaux réalisés</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 img-fluid" src="img/site_1.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid" src="img/site_2.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid" src="img/site_3.png" alt="Third slide">
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </main>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   </body>
+  <script>
+    $('.carousel').carousel({
+      interval: 2000
+    })
+  </script>
 </html>
